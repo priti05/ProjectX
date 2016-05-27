@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+	
+	
+	<!-- This needs to be removed, it means for development purpose only -->
+	<bean id="loginDAO" class="org.projectX.dbo.login.dao.LoginDAOImplementation" autowire="byName"/>
+	
+	<bean id="loginDAOHelper" class="org.projectX.dbo.login.dao.helper.LoginDAOHelper" autowire="byName"/>
+	
+	 <context:annotation-config />
+	
+</beans>
